@@ -20,7 +20,7 @@ class QuestionController extends GetxController
   late PageController _pageController;
   PageController get pageController => this._pageController;
 
-  List<Question> _questions = sample_data
+  List<Question> _questions = covid_questions
       .map(
         (question) => Question(
             id: question['id'],

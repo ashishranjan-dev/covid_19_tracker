@@ -229,6 +229,13 @@ class _ResetScreenState extends State<ResetScreen> with TickerProviderStateMixin
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
+
+
+                                 emailfield(size: size),
+
+                          SizedBox(height: size.height*0.02,),
+                          passwordfield(size: size),
+                           SizedBox(height: size.height*0.02,),
                            
                               
                             Row(

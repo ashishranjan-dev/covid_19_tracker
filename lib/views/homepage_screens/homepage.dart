@@ -1,4 +1,5 @@
 import 'package:covid_19_tracker/services/authservices.dart';
+import 'package:covid_19_tracker/views/homepage_screens/about.dart';
 import 'package:covid_19_tracker/views/homepage_screens/preventions.dart';
 import 'package:covid_19_tracker/views/quiz/welcome/welcome_screen.dart';
 import 'package:covid_19_tracker/views/homepage_screens/state_data_list.dart';
@@ -349,10 +350,10 @@ class _HomePageScreenState extends State<HomePageScreen>
                         
                        
                           faqQue() ,
-                        Colors.lightGreen,
-                         Image.asset('lib/assets/images/breathing.png'),
-                        'Example',
-                        RouteWhereYouGo(),
+                          Colors.white,
+                         Image.asset('lib/assets/myimages/info.png'),
+                        'About',
+                        About(),
                         
                         ),
                   

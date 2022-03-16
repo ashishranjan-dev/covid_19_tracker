@@ -9,7 +9,7 @@ class loader{
  static  Widget laoder({required context}){
 
     return Container(
-      color: Color.fromARGB(255, 20, 20, 20),
+      color: Colors.black87,
       height: MediaQuery.of(context).size.height,
       child: Column
       

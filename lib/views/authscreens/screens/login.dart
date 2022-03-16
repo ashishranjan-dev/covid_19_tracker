@@ -241,7 +241,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                                     });
 
 
-                                    await   Auth.signIn(email: login.emailController.text , password: login.passwordController.text , size: size);
+                                    await   Auth.signIn(email: login.emailController.text.trim() , password: login.passwordController.text.trim() , size: size);
 
                                     setState(() {
                                       isloading=false;

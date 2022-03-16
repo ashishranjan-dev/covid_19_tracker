@@ -253,8 +253,8 @@ class _RegistrationState extends State<Registration> with TickerProviderStateMix
                                       isloading=true;
                                     });
 
-                                    await Auth.signUp(email: register.emailController.text, name: register.namecontroller.text,
-                                          password: register.passwordController.text, size: size   );                                
+                                    await Auth.signUp(email: register.emailController.text.trim(), name: register.namecontroller.text.trim(),
+                                          password: register.passwordController.text.trim(), size: size   );                                
                                        setState(() {
                                       isloading=false;
                                     });
@@ -345,56 +345,6 @@ class _RegistrationState extends State<Registration> with TickerProviderStateMix
   }
   
 
-  /*  Widget component1({required IconData account_circle_outlined, 
-     IconData? icon, String? hintText, bool? isPassword, bool? isEmail,required TextEditingController controller,required Function validator}) {
-    Size size = MediaQuery.of(context).size;
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(15),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(
-          sigmaY: 15,
-          sigmaX: 15,
-        ),
-        child: Container(
-          height: size.width / 6,
-          width: size.width / 1.2,
-          alignment: Alignment.center,
-          padding: EdgeInsets.only(right: size.width / 30),
-          decoration: BoxDecoration(
-            color: Colors.white.withOpacity(.05),
-            borderRadius: BorderRadius.circular(15),
-          ),
-          child: TextFormField(
-            controller: controller,
-            style: TextStyle(color: Colors.white.withOpacity(.99),fontWeight: FontWeight.w600),
-            cursorColor: Colors.white,
-            obscureText: isPassword!,
-                    validator: (value) {
-
-
-                      return validator(value);
-           
-             
-
-            },
-            keyboardType:
-                 TextInputType.text,
-            decoration: InputDecoration(
-              prefixIcon: Icon(
-                icon,
-                color: Colors.white.withOpacity(.4),
-              ),
-              border: InputBorder.none,
-              hintMaxLines: 1,
-              hintText: hintText,
-              hintStyle:
-                  TextStyle(fontSize: 16, color: Colors.white.withOpacity(.6)),
-            ),
-          ),
-        ),
-      ),
-    );
-  } */
 
   Widget emailfield({required size}) {
    
