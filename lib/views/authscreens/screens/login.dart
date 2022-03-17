@@ -462,7 +462,7 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
             controller: login.passwordController,
             style: TextStyle(color: Colors.white.withOpacity(.99),fontWeight: FontWeight.w600),
             cursorColor: Colors.white,
-            obscureText: false,
+            obscureText: true,
                     validator: (String? value) => login.validatePassword(value!),
             keyboardType:
                  TextInputType.text,

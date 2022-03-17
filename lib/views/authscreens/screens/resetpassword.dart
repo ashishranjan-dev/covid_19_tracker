@@ -425,7 +425,7 @@ class _ResetScreenState extends State<ResetScreen> with TickerProviderStateMixin
             controller: reset.passwordController,
             style: TextStyle(color: Colors.white.withOpacity(.99),fontWeight: FontWeight.w600),
             cursorColor: Colors.white,
-            obscureText: false,
+            obscureText: true,
                     validator: (String? value) => reset.validatePassword(value!),
             keyboardType:
                  TextInputType.text,

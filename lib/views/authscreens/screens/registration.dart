@@ -412,7 +412,7 @@ class _RegistrationState extends State<Registration> with TickerProviderStateMix
             controller: register.passwordController,
             style: TextStyle(color: Colors.white.withOpacity(.99),fontWeight: FontWeight.w600),
             cursorColor: Colors.white,
-            obscureText: false,
+            obscureText: true,
                     validator: (String? value) => register.validatePassword(value!),
             keyboardType:
                  TextInputType.text,
